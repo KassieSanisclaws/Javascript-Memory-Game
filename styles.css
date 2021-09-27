@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #4E996C, #94cf0b9d);
+}
+
+.memory-game-section{
+    background: rgba(216, 216, 218, 0.226);
+    height: 90vh;
+    margin-top: 2%;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.memory-game{
+    height: 80vh; 
+    width: 80vw;
+    margin-left: 10%;
+}
+
+.memory-cards{
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: -1rem;
+    align-items: center;
+    margin-left: 6.5%;
+}
+
+.memory-card{
+    background-color: rgba(255, 255, 255, .9);
+    height: 15vh;
+    width: 11vw;
+    margin-left: 18%;
+    border-radius: 3%;
+}
+
+.memory-card:hover{
+    
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 5px #4E996C;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+
+.img-gundam1{
+   background-image: url(./images/gundams/gundam00_img2.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.img-gundam2{
+    background-image: url(./images/gundams/gundam00_img3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-naruto1{
+    background-image: url(./images/naruto/naruto_img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-naruto2{
+    background-image: url(./images/naruto/naruto_img2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-dbz1{
+    background-image: url(./images/dragonball-z/dbz_img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-dbz2{
+    background-image: url(./images/dragonball-z/dbz_img2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-codegeass1{
+  background-image: url(./images/code-geass/codegeass_img1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-codegeass2{
+    background-image: url(./images/code-geass/codegeass_img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.img-hidden{
+   background-image: none;
+  }
+
+.newGame-button{
+    color: blue;
+    
+}
