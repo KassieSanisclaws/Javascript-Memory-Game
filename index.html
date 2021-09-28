@@ -11,7 +11,16 @@
 <body>
     <div class="memory-game-section">
          <div class="memory-game">
-             <h1>Javascript Memory Game</h1>
+             <div class="">
+                 <div class="memory-game-header">
+                      <h1>Javascript Memory Game</h1>
+                 </div>
+                 <div class="memory-game-scoreboard">
+                      <div data-game-timer><span>Timmer:</span></div>
+                      <div data-total-clicks><span>Clicks:</span></div>
+                 </div>     
+             </div>
+            
               <div class="memory-cards">
 
                <div data-cards-tile="gundam1" class="memory-card img-gundam1 img-hidden"></div>
@@ -47,7 +56,7 @@
              <div data-cards-tile="gundam2" class="memory-card img-gundam2 img-hidden"></div>
 
               </div>
-                <button data-button="newGame" class="newGame-button">New Game</button>
+                <button data-new-game class="newGame-button">New Game</button>
          </div>  
     </div> 
 </body>
