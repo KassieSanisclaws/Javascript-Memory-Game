@@ -1,15 +1,21 @@
-body{
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    display: flex;
     height: 100%;
     width: 100%;
     background: linear-gradient(to right, #4E996C, #94cf0b9d);
 }
 
 .memory-game-section{
-    background: rgba(216, 216, 218, 0.226);
+    background: rgba(216, 216, 218, 0.164);
     height: 90vh;
     margin-top: 2%;
+    margin-left: 20%;
 }
 
 h1{
@@ -19,97 +25,53 @@ h1{
 }
 
 .memory-game{
-    height: 80vh; 
-    width: 80vw;
-    margin-left: 10%;
+    height: 65vh; 
+    width: 55vw;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 10000px;
+   
+}
+
+.memory-cards:hover{
+    background-color: #b7b9b88f;
+    cursor: pointer;
 }
 
 .memory-cards{
-    height: 70vh;
-    width: 70vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: -1rem;
-    align-items: center;
-    margin-left: 6.5%;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.memory-card{
-    background-color: rgba(255, 255, 255, .9);
-    height: 15vh;
-    width: 11vw;
-    margin-left: 18%;
-    border-radius: 3%;
+.memory-cards:active{
+     transform: scale(0.97);
+     transition: transform .2s;
 }
 
-.memory-card:hover{
-    
-    cursor: pointer;
-    box-shadow: 1px 1px 1px 5px #4E996C;
-    border: 3px solid black;
-    box-sizing: border-box;
+.memory-cards.flip{
+    transform: rotateY(180deg);
 }
 
-
-.img-gundam1{
-   background-image: url(./images/gundams/gundam00_img2.png);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+.front-cards-tile,
+.back-cards-tile{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5%;
+  background: #93eeb727;
+  /* backface-visibility: hidden; */
 }
 
-.img-gundam2{
-    background-image: url(./images/gundams/gundam00_img3.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.front-cards-tile{
+   transform: rotateY(180deg);
 }
-
-.img-naruto1{
-    background-image: url(./images/naruto/naruto_img1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-naruto2{
-    background-image: url(./images/naruto/naruto_img2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-dbz1{
-    background-image: url(./images/dragonball-z/dbz_img1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-dbz2{
-    background-image: url(./images/dragonball-z/dbz_img2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-codegeass1{
-  background-image: url(./images/code-geass/codegeass_img1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img-codegeass2{
-    background-image: url(./images/code-geass/codegeass_img2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-.img-hidden{
-   background-image: none;
-  }
 
 .newGame-button{
     color: blue;
