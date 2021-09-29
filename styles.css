@@ -57,7 +57,7 @@ h1{
 }
 
 
-.img-gundam1{
+/* .img-gundam1{
    background-image: url(./images/gundams/gundam00_img2.png);
    background-position: center;
    background-size: cover;
@@ -115,7 +115,7 @@ h1{
 
 .img-hidden{
    background-image: none;
-  }
+  } */
 
 .newGame-button{
     color: blue;
