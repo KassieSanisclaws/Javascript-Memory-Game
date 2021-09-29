@@ -33,7 +33,10 @@ class MemoryGameBoard {
 
 //Function for card tile shuffle.//
   shuffleCardTiles(){
-     
+     this.gameCardTiles = this.gameCardTiles.forEach(gameCards => {
+         let randomCardTiles = Math.floor(Math.random() *16);
+         gameCards.style.order = randomCardTiles;
+     })
     console.log("shuffled")
 }
  
